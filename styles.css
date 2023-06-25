@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #21243d;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #8c0c5c;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.menu li {
+  padding-right: 20px;
+}
+
+header {
+  background-color: #5a0d5c;
+  background: linear-gradient(
+    90deg,
+    rgba(90, 13, 92, 0.9223039557619923) 0%,
+    rgba(140, 12, 92, 1) 55%,
+    rgba(215, 193, 203, 1) 100%
+  );
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+header img {
+  width: 243px;
+  height: 243px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #d7c1cb;
+}
+
+.profile-picture {
+  margin-top: -155px;
+  margin-left: -143px;
+}
+
+.header-title h2 {
+  margin-bottom: 20px;
+}
+
+.ul-contact {
+  display: flex;
+}
+
+.ul-contact i {
+  color: #f3849f;
+  font-size: 28px;
+  margin-right: 18px;
+}
+
+.ul-contact a:hover {
+  opacity: 75%;
+}
+
+.about {
+  padding: 50px 100px;
+}
+
+.about p {
+  margin-bottom: 10px;
+}
+
+.about h3,
+.skills h3,
+.works h3,
+.skills h4 {
+  margin-bottom: 15px;
+}
+
+.div-about-text {
+  margin-bottom: 40px;
+}
+
+.a-download-cv {
+  background-color: #f3849f;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 22px 0 22px 0;
+}
+
+.a-download-cv:hover {
+  text-decoration: none;
+  opacity: 75%;
+}
+
+.skills {
+  padding: 50px 100px;
+  background-color: #d7c1cb;
+}
+
+.div-skills-flex {
+  display: flex;
+}
+
+.div-skills-languages {
+  margin-left: 100px;
+}
+
+.skills ul li {
+  list-style: square inside;
+}
+
+.works {
+  padding: 50px 100px;
+}
+
+.works p {
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  header {
+    padding: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 45px 25px;
+  }
+
+  header img {
+    width: 183px;
+    height: 183px;
+  }
+
+  .header-title {
+    margin-bottom: 25px;
+  }
+
+  .profile-picture {
+    margin-top: -118px;
+    margin-left: -101px;
+  }
+
+  .background-picture {
+    margin-right: -100px;
+  }
+
+  .about,
+  .skills,
+  .works {
+    padding: 35px 25px;
+  }
+
+  .div-skills-flex {
+    flex-direction: column;
+  }
+
+  .div-skills-languages {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
